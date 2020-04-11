@@ -1,7 +1,8 @@
 const routes = require('express').Router();
 
-const HomeController = require('./controllers/HomeController');
+const UrlController = require('./controllers/UrlController');
 
-routes.get('/', HomeController.index);
+routes.get('/', UrlController.index);
+routes.post('/urls', UrlController.create);
 
 module.exports = routes;

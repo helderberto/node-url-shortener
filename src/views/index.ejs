@@ -7,13 +7,14 @@
 
   <link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <body>
   <main class="main">
     <h1>🔗 URL Shrinker</h1>
 
-    <form class="form__shrink" action="" method="POST">
-      <input class="input__url" type="url" name="fullUrl" id="fullUrl" />
+    <form class="form__shrink" action="/urls" method="POST">
+      <input class="input__url" placeholder="URL" type="url" name="fullUrl" id="fullUrl" />
       <button class="btn btn__shrink" type="submit">Shrink</button>
     </form>
 
@@ -26,39 +27,19 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="https://helder.dev">https://helder.dev</a>
-          </td>
-          <td>
-            <a href="/12356">123456</a>
-          </td>
-          <td>
-            10
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://helder.dev">https://helder.dev</a>
-          </td>
-          <td>
-            <a href="/12356">123456</a>
-          </td>
-          <td>
-            10
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://helder.dev">https://helder.dev</a>
-          </td>
-          <td>
-            <a href="/12356">123456</a>
-          </td>
-          <td>
-            10
-          </td>
-        </tr>
+        <% urls.forEach(url => { %>
+          <tr>
+            <td>
+              <a href="<%= url.full %>"><%= url.full %></a>
+            </td>
+            <td>
+              <a href="<%= url.short %>"><%= url.short %></a>
+            </td>
+            <td>
+              <%= url.clicks %>
+            </td>
+          </tr>
+        <% }) %>
       </tbody>
     </table>
   </main>
