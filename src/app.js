@@ -10,7 +10,12 @@ const useMiddlewares = require('./utils/useMiddlewares');
 /**
  * Load environment variables from .env file.
  */
-dotenv.config({ path: '.env.example' });
+dotenv.config({ path: '.env' });
+
+/**
+ * Import database config. and connect
+ */
+require('./database/connection');
 
 /**
  * Create Express server.
@@ -29,6 +34,7 @@ app.set('view engine', 'ejs');
  */
 useMiddlewares(
   cors(),
+  express.urlencoded({ extended: false }),
   express.json(),
   logger('dev'),
   compression(),
