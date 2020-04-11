@@ -1,5 +1,5 @@
 {
-  "name": "node-url-shrinker",
+  "name": "node-url-shortener",
   "version": "1.0.0",
   "description": "URL Shrinker with NodeJS + EJS + MongoDB.",
   "main": "src/app.js",
@@ -11,7 +11,7 @@
   "author": "Helder Burato Berto <helder.burato@gmail.com> (https://helder.dev/)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helderburato/node-url-shrinker.git"
+    "url": "git+https://github.com/helderburato/node-url-shortener.git"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -41,7 +41,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helderburato/node-url-shrinker/issues"
+    "url": "https://github.com/helderburato/node-url-shortener/issues"
   },
-  "homepage": "https://github.com/helderburato/node-url-shrinker#readme"
+  "homepage": "https://github.com/helderburato/node-url-shortener#readme"
 }
