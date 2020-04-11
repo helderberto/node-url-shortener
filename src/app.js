@@ -33,6 +33,7 @@ useMiddlewares(
   logger('dev'),
   compression(),
   routes,
+  express.static(path.join(__dirname, 'static')),
 )(app);
 
 /**
