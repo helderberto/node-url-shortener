@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const logger = require('morgan');
@@ -20,6 +21,8 @@ const app = express();
  * Express configs.
  */
 app.set('port', process.env.PORT || 3000);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 /**
  * Express load middlewares
