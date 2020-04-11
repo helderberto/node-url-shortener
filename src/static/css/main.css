@@ -141,6 +141,14 @@ h1, h2, h3, h4, h5, h6, strong {
   background: #eee;
 }
 
+.empty {
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  background: #bd2727;
+  border-radius: 3px;
+  color: #fff;
+}
+
 @media (max-width: 767px) {
   body {
     padding: 0 20px;
