@@ -1,8 +1,8 @@
-# Node API Boilerplate
+# Node URL Shrinker
 
 [![License][license-badge]][license-url] [![Commitizen][commitizen-badge]][commitizen-url]
 
-✨ A simple and quick way to start your API using NodeJS + Express.
+✨ URL Shrinker with NodeJS + EJS + MongoDB.
 
 ## Requirements
 
@@ -15,10 +15,10 @@ The most quickly way to start your project is following the example:
 
 ```bash
 # Get the latest snapshot
-$ git clone git@github.com:helderburato/node-api-boilerplate.git ~/<your-project>
+$ git clone git@github.com:helderburato/node-url-shrinker.git
 
 # Change directory
-$ cd <your-project>
+$ cd node-url-shrinker
 
 # Install dependencies
 $ yarn install
@@ -39,13 +39,13 @@ We use [SemVer](https://semver.org/) for versioning. For the versions available,
 
 - **Helder Burato Berto** - _Initial work_ - [helderburato](https://github.com/helderburato)
 
-See also the list of [contributors](https://github.com/helderburato/node-api-boilerplate/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/helderburato/node-url-shrinker/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-[license-badge]: https://img.shields.io/github/license/helderburato/node-api-boilerplate.svg
+[license-badge]: https://img.shields.io/github/license/helderburato/node-url-shrinker.svg
 [license-url]: https://opensource.org/licenses/MIT
 [commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [commitizen-url]: http://commitizen.github.io/cz-cli/

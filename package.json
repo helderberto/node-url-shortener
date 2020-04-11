@@ -1,7 +1,7 @@
 {
-  "name": "node-api-boilerplate",
+  "name": "node-url-shrinker",
   "version": "1.0.0",
-  "description": "✨ A simple and quick way to start your API using NodeJS + Express.",
+  "description": "URL Shrinker with NodeJS + EJS + MongoDB.",
   "main": "src/app.js",
   "scripts": {
     "dev": "nodemon src/app.js",
@@ -11,7 +11,7 @@
   "author": "Helder Burato Berto <helder.burato@gmail.com> (https://helder.dev/)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helderburato/node-api-boilerplate.git"
+    "url": "git+https://github.com/helderburato/node-url-shrinker.git"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -35,13 +35,12 @@
   "keywords": [
     "nodejs",
     "express",
-    "node-boilerplate",
-    "node-starter",
-    "node-api"
+    "node-shrinker",
+    "node-shortener"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helderburato/node-api-boilerplate/issues"
+    "url": "https://github.com/helderburato/node-url-shrinker/issues"
   },
-  "homepage": "https://github.com/helderburato/node-api-boilerplate#readme"
+  "homepage": "https://github.com/helderburato/node-url-shrinker#readme"
 }
