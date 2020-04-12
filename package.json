@@ -2,11 +2,14 @@
   "name": "node-url-shortener",
   "version": "1.0.0",
   "description": "URL Shrinker with NodeJS + EJS + MongoDB.",
-  "main": "src/app.js",
+  "main": "dist/server.js",
   "scripts": {
+    "start": "yarn dist/server.js",
     "dev": "nodemon src/server.ts",
     "build": "tsc",
-    "lint": "tsc --noEmit && eslint 'src/*.{js,ts,tsx}' --quiet --fix"
+    "lint": "tsc --noEmit && eslint 'src/*.{js,ts,tsx}' --quiet --fix",
+    "watch-node": "nodemon dist/server.js",
+    "watch-ts": "tsc -w"
   },
   "author": "Helder Burato Berto <helder.burato@gmail.com> (https://helder.dev/)",
   "repository": {
