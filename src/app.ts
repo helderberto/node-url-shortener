@@ -7,12 +7,12 @@ import dotenv from 'dotenv'
 import routes from './routes'
 import connection from './database/connection'
 
+dotenv.config({ path: '.env' })
+
 class App {
   public express: express.Application
 
   public constructor () {
-    dotenv.config({ path: '.env' })
-
     this.express = express()
 
     this.middlewares()
