@@ -3,11 +3,8 @@ import path from 'path'
 import cors from 'cors'
 import logger from 'morgan'
 import compression from 'compression'
-import dotenv from 'dotenv'
 import routes from './routes'
 import connection from './database/connection'
-
-dotenv.config({ path: '.env' })
 
 class App {
   public express: express.Application
