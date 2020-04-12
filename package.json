@@ -5,11 +5,12 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "build": "tsc",
-    "lint": "tsc --noEmit && eslint 'src/*.{js,ts,tsx}' --quiet --fix",
+    "start": "node dist/server.js",
+    "copy": "cp -r src/views dist; cp -r src/static dist",
+    "build": "rimraf ./dist; tsc; yarn copy",
     "watch-node": "nodemon dist/server",
     "watch-ts": "tsc -w",
-    "start": "node dist/server.js",
+    "lint": "tsc --noEmit; eslint 'src/*.{js,ts,tsx}' --quiet --fix",
     "postinstall": "yarn build"
   },
   "author": "Helder Burato Berto <helder.burato@gmail.com> (https://helder.dev/)",
@@ -21,6 +22,7 @@
     "@types/node": "^13.11.1",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
+    "cp": "^0.2.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-config-standard": "^14.1.1",
@@ -32,6 +34,7 @@
     "husky": "^4.2.5",
     "nodemon": "^2.0.3",
     "prettier": "^2.0.4",
+    "rimraf": "^3.0.2",
     "sucrase": "^3.13.0",
     "typescript": "^3.8.3"
   },
